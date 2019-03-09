@@ -227,5 +227,16 @@ a[x-apple-data-detectors] {
           </center></td>
       </tr>
     </table>
+    <script>
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                vars[key] = value;
+            });
+            console.log(vars);
+            return vars;
+        }
+        var query = getUrlVars();
+    </script>
 </body>
 </html>
