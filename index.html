@@ -233,10 +233,10 @@ a[x-apple-data-detectors] {
             var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
                 vars[key] = value;
             });
-            console.log(vars);
             return vars;
         }
         var query = getUrlVars();
+        console.log('query: ', query);
     </script>
 </body>
 </html>
