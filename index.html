@@ -150,8 +150,9 @@ a[x-apple-data-detectors] {
 					
 					<!--EDIT THE WHITE TEXT-->
 					
-					<!--CLASS NAME-->
-					Introduction to New Vehicle Titling &amp; Registration 
+                    <!--CLASS NAME-->
+                    <span id="title">Introduction to New Vehicle Titling &amp; Registration </span>
+					
 					
 					<br> 
 					
@@ -237,6 +238,8 @@ a[x-apple-data-detectors] {
         }
         var query = getUrlVars();
         console.log('query: ', query);
+        $('#title').text(query.title)
+
     </script>
 </body>
 </html>
